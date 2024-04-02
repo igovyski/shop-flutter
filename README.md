@@ -1,16 +1,5 @@
-# shop
+# Projeto Shop
 
-A new Flutter project.
+Um aplicativo, em Flutter, focado nos métodos de gerenciamento de estado. App feito para parecer um app de loja. Projeto guiado extraído do curso de Flutter do Profº Leonardo Moura Leitão, na Udemy.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Link do curso: https://www.udemy.com/course/curso-flutter/
