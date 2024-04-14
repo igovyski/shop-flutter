@@ -19,7 +19,7 @@ class Cart with ChangeNotifier {
     double total = 0.0;
     _items.forEach(
       (key, cartItem) {
-        total += cartItem.price * cartItem.quantidy;
+        total += cartItem.price * cartItem.quantity;
       },
     );
     return total;
@@ -33,7 +33,7 @@ class Cart with ChangeNotifier {
           id: existingItem.id,
           productId: existingItem.productId,
           name: existingItem.name,
-          quantidy: existingItem.quantidy + 1,
+          quantity: existingItem.quantity + 1,
           price: existingItem.price,
         ),
       );
@@ -44,7 +44,7 @@ class Cart with ChangeNotifier {
           id: Random().nextDouble().toString(),
           productId: product.id,
           name: product.name,
-          quantidy: 1,
+          quantity: 1,
           price: product.price,
         ),
       );
@@ -62,7 +62,7 @@ class Cart with ChangeNotifier {
       return;
     }
 
-    if (_items[productId]?.quantidy == 1) {
+    if (_items[productId]?.quantity == 1) {
       _items.remove(productId);
     } else {
       _items.update(
@@ -71,7 +71,7 @@ class Cart with ChangeNotifier {
           id: existingItem.id,
           productId: existingItem.productId,
           name: existingItem.name,
-          quantidy: existingItem.quantidy - 1,
+          quantity: existingItem.quantity - 1,
           price: existingItem.price,
         ),
       );
