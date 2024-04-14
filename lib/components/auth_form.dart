@@ -1,8 +1,6 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers, constant_identifier_names
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:shop/exceptions/auth_exception.dart';
 import 'package:shop/models/auth.dart';
@@ -32,7 +30,6 @@ class _AuthFormState extends State<AuthForm>
   Animation<Offset>? _slideAnimation;
 
   bool _isLogin() => _authMode == AuthMode.Login;
-  bool _isSingup() => _authMode == AuthMode.Singup;
 
   @override
   void initState() {

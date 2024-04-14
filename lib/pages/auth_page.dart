@@ -1,8 +1,6 @@
 // ignore_for_file: sized_box_for_whitespace
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:shop/components/auth_form.dart';
 
 class AuthPage extends StatelessWidget {

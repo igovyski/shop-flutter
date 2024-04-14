@@ -60,9 +60,6 @@ class OrderList with ChangeNotifier {
 
   Future<void> addOrder(Cart cart) async {
     final date = DateTime.now();
-    print('****************');
-    print('$_token');
-    print('****************');
 
     final response = await http.post(
       Uri.parse('${Constants.ORDER_BASE_URL}/$_userId.json?auth=$_token'),
