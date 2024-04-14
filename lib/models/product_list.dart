@@ -40,6 +40,7 @@ class ProductList with ChangeNotifier {
     );
 
     Map<String, dynamic> favData =
+        // ignore: unnecessary_null_comparison
         favResponse.body == null ? {} : jsonDecode(favResponse.body);
 
     Map<String, dynamic> data = jsonDecode(response.body);
